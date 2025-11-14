@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="titleText">YouTube Downloader</h1>
+
+        <div class="thumbnail-container" id="thumbnailContainer">
+            <img id="thumbnail" src="" alt="Video thumbnail">
+            <span class="thumbnail-placeholder">Video thumbnail will appear here</span>
+        </div>
+
+        <form id="downloadForm">
+            <label for="videoUrl">Video URL</label>
+            <input type="text" id="videoUrl" placeholder="https://www.youtube.com/watch?v=..." required>
+            <div class="error" id="urlError">Please enter a valid YouTube URL</div>
+
+            <div class="form-row">
+                <div>
+                    <label for="format">Format</label>
+                    <select id="format" required disabled>
+                        <option value="">Select format</option>
+                        <option value="video">Video</option>
+                        <option value="audio">Audio</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="quality">Quality</label>
+                    <select id="quality" required disabled>
+                        <option value="">Select quality</option>
+                        <option value="best">Best</option>
+                        <option value="best[height<=1080]">1080p</option>
+                        <option value="best[height<=720]">720p</option>
+                        <option value="best[height<=480]">480p</option>
+                        <option value="best[height<=360]">360p</option>
+                        <option value="worst">Worst</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" id="actionBtn">Next</button>
+        </form>
+
+        <button id="resetBtn" onclick="window.location.href = window.location.href.split('?')[0];">Reset</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
