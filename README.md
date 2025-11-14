@@ -8,8 +8,6 @@ A simple, self-hostable YouTube downloader built with Flask and Python. Run your
 own instance to download videos or audio directly from a clean web interface—no
 ads, no limits.
 
----
-
 ## Features
 
 - Download YouTube **videos** in **MP4**
@@ -17,8 +15,6 @@ ads, no limits.
 - Select video quality
 - Completely self-hosted
 - Lightweight and easy to set up
-
----
 
 ## Requirements
 
@@ -33,8 +29,6 @@ ads, no limits.
   `ffmpeg` in the project root.
 - **Linux:** Ensure FFmpeg is installed via your package manager and accessible
   in `/usr/bin`.
-
----
 
 ## Installation
 
@@ -59,8 +53,6 @@ the app:
 pip install uv
 ```
 
----
-
 ## Running the App
 
 **Recommended (using UV):**
@@ -78,8 +70,6 @@ python main.py
 - Runs on `0.0.0.0:5005` by default
 - Starts in **debug mode**
 
----
-
 ## Usage
 
 1. Open your browser and navigate to `http://127.0.0.1:5005` (or your server IP
@@ -90,18 +80,12 @@ python main.py
 
 ![The UI](/images/UI.png)
 
----
-
 ## Warnings & Disclaimers
 
 - This project is for **personal use only**.
 - Be aware of **YouTube's Terms of Service**. Downloading copyrighted content
   without permission may violate local laws.
 
----
-
 ## License
 
 No license. Use at your own risk.
-
----
