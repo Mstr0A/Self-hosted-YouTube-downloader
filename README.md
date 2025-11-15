@@ -35,7 +35,7 @@ ads, no limits.
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/Self-hosted-YouTube-downloader.git
+git clone https://github.com/Mstr0A/Self-hosted-YouTube-downloader.git
 cd Self-hosted-YouTube-downloader
 ```
 
